@@ -47,9 +47,14 @@ Choose "Configure File Association for '.mdx'..." and then type in and choose "M
 You may need to close and reopen the file to see any change.
 :::
 
-As you're making changes, you'll notice a number appear next to this weird little icon in the left hand side bar. This is the source control tab and lets you use Git directly from within the text editor.
-
+<Table>
+<div style={{minWidth:'4%'}}>
 ![](img/sourceControl.png)
+</div>
+
+As you're making changes, you'll notice a number appear next to this weird little icon in the left hand side bar. This is the source control tab and lets you use Git directly from within the text editor.
+</Table>
+
 
 Clicking on it will change the file browser to show only the files that you have made changes to. You can even click on any file to see a visualization of exactly what you've changed in the file.
 
