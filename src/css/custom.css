@@ -52,6 +52,7 @@
   flex: 50%;
   border-radius: 0.4rem;
   padding: 1rem;
+  margin-bottom: 1em;
   background-color: #bbe7f7;
 }
 
@@ -59,6 +60,7 @@
   flex: 50%;
   border-radius: 0.4rem;
   padding: 1rem;
+  margin-bottom: 1em;
   background-color: #c7ebc7;
 }
 
