@@ -4,9 +4,11 @@ import CodyImg from '@site/static/img/Cody.png'
 export default function Cody({children}) {
   return (
     <div className={'cody'}>
-        <img src={CodyImg} style={{maxWidth: '20px'}}></img>
-        <span style={{fontSize: '1.3rem', fontWeight: 'bold'}}>CODY</span>
-        {children}
+      <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '0.5rem'}}>
+        <img src={CodyImg} style={{maxHeight: '30px', marginTop: '-10px'}}></img>
+        <span style={{fontSize: '1.3rem', fontWeight: 'bold'}}> CODY</span>
+      </div>
+      {children}
     </div>
   );
 }
