@@ -12,7 +12,7 @@ const config = {
 
   // Production URL
   url: 'https://ITTSR.github.io',
-  baseUrl: '/ITTSR-Wiki',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   organizationName: 'ITTSR',
