@@ -64,10 +64,22 @@
   background-color: #c7ebc7;
 }
 
+.either {
+  flex: 50%;
+  border-radius: 0.4rem;
+  padding: 1rem;
+  margin-bottom: 1em;
+  background-color: #d9d9d9;
+}
+
 [data-theme='dark'] .may {
   background-color: #286071;
 }
 
 [data-theme='dark'] .cody {
   background-color: #3a7128;
+}
+
+[data-theme='dark'] .either {
+  background-color: #4d4d4d;
 }
