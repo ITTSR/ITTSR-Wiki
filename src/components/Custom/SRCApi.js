@@ -190,14 +190,18 @@ export default function CurrentWR({category, lobby = "online", level = null}) {
 
     var Output = (
         <div className={'leaderboard'}>
-            <h2 style={{marginBottom: '0.5rem'}}>World Record: <a href={wr?.weblink}>{gameTime}</a></h2>
-            <h4 style={{display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '0.5rem'}}>
-                <span style={{marginRight: '-0.2rem'}}>by </span>
-                <img src={MayImg} style={{maxWidth: '20px', marginTop: '-0.35rem', marginRight: '-0.4rem'}}></img>
-                <a href={mayPlayer?.weblink}>{mayPlayer?.names?.international}</a>
-                <span> and </span>
-                <img src={CodyImg} style={{maxWidth: '20px', marginTop: '-0.35rem', marginRight: '-0.4rem'}}/>
-                <a href={codyPlayer?.weblink}>{codyPlayer?.names?.international}</a>
+            <h2 style={{marginBottom: '0.5rem', display: 'flex', flexWrap: 'wrap'}}>World Record:&nbsp;<a href={wr?.weblink}>{gameTime}</a></h2>
+            <h4 style={{display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap'}}>
+                <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                    <span style={{marginRight: '-0.2rem'}}>by </span>
+                    <img src={MayImg} style={{maxWidth: '20px', marginTop: '-0.35rem', marginRight: '-0.4rem'}}></img>
+                    <a href={mayPlayer?.weblink}>{mayPlayer?.names?.international}</a>
+                </div>
+                <div style={{display: 'flex', alignItems: 'center', gap: '0.5rem'}}>
+                    <span> and </span>
+                    <img src={CodyImg} style={{maxWidth: '20px', marginTop: '-0.35rem', marginRight: '-0.4rem'}}/>
+                    <a href={codyPlayer?.weblink}>{codyPlayer?.names?.international}</a>
+                </div>
             </h4>
             
             {embedUrl}
