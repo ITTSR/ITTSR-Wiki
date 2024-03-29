@@ -5,6 +5,8 @@ import Table from '@site/src/components/Custom/Table';
 import May from '@site/src/components/Custom/May';
 import Cody from '@site/src/components/Custom/Cody';
 import Either from '@site/src/components/Custom/Either';
+import CurrentWR from '@site/src/components/Custom/SRCApi';
+import {YouTube, Twitch} from 'mdx-embed';
 
 export default {
   // Re-use the default mapping
@@ -15,4 +17,7 @@ export default {
   May,
   Cody,
   Either,
+  CurrentWR,
+  YouTube,
+  Twitch,
 };
