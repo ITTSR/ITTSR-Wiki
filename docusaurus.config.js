@@ -40,6 +40,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/ITTSR/ITTSR-Wiki/blob/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
 
           admonitions: {
             keywords: ['note', 'tip', 'info', 'caution', 'danger', 'easy', 'medium', 'hard'],
