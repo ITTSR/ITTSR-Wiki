@@ -69,9 +69,9 @@ export default function NavbarContent() {
           <NavbarItems items={rightItems} />
           <NavbarColorModeToggle className={styles.colorModeToggle} />
           {!searchBarItem && (
-            <NavbarSearch>
+            //<NavbarSearch>
               <SearchBar />
-            </NavbarSearch>
+            //</NavbarSearch>
           )}
         </>
       }

@@ -40,6 +40,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
             'https://github.com/ITTSR/ITTSR-Wiki/blob/main/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
 
           admonitions: {
             keywords: ['note', 'tip', 'info', 'caution', 'danger', 'easy', 'medium', 'hard'],
@@ -49,6 +51,24 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+      }),
+    ],
+  ],
+
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      /** ATSIGN type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
+      ({
+        // ... Your options.
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        indexBlog: false,
+        hashed: true,
+        searchBarShortcutHint: false,
+        // For Docs using Chinese, The `language` is recommended to set to:
+        // ```
+        // language: ["en", "zh"],
+        // ```
       }),
     ],
   ],
